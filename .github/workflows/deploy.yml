@@ -17,7 +17,7 @@ jobs:
           username: ${{ secrets.USER }}
           key: ${{ secrets.SSH_KEY }}
           script: |
-            cd /home/ubuntu/app
+            cd /home/ubuntu/app/github_sharan/
             git pull
             docker compose down
             docker compose up -d
